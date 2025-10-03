@@ -1,0 +1,16 @@
+// declare a global variable outside all functions and use it inside various fumctions to understand its accessibility
+#include <stdio.h>
+int b=10; //global variable
+void function1(){
+    printf("function1: gloabal variable = %d\n",b);
+}
+void function2(){
+    printf("function 2: global variable = %d\n",b);
+}
+
+int main() {
+    printf("main : global variable =%d\n",b);
+    function1();
+    function2();
+    return 0;
+}
