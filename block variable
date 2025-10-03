@@ -1,0 +1,10 @@
+// declare variables within diffrent code blocks (enclosed by curly braces) and test their accessibility with in and outside those blocks
+#include<stdio.h>
+int main(){
+    if(1){
+        int blockvar=50;
+        printf("inside block : block variable =%d\n",blockvar);
+    }
+    //printf("outside block : block varible=%d\n",blockvar);
+    return 0 ;
+}
